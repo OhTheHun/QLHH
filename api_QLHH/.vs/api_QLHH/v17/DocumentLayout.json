@@ -1,0 +1,613 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\data\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\data\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\services\\interface\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\services\\interface\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\data\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\data\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\chitietkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\chitietkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\chitietkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\chitietkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\danhmucsanphamresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\danhmucsanphamresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\dashboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\dashboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\khoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\khoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\kho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\kho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\createphieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\createphieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\createchitietphieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\createchitietphieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\nhapkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\nhapkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\sanphamfollowingkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\sanphamfollowingkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\listaccountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\listaccountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\chitietkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\chitietkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\chitietphieuxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\chitietphieuxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\data\\interface\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\data\\interface\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\mapping\\phieunhaptophieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\mapping\\phieunhaptophieunhaprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\sqldata\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\sqldata\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\mapping\\accountmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\mapping\\accountmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\accountrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\accountrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\accountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\accountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\mapping\\khotokhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\mapping\\khotokhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\mapping\\chitietkhotochitietkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\mapping\\chitietkhotochitietkhorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\mapping\\chitietkhotochitietkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\mapping\\chitietkhotochitietkhoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\requests\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\requests\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\core\\dtos\\responses\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\core\\dtos\\responses\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|d:\\bt\\qlducntt\\qlhh\\erp.backend-review\\api_qlhh\\api_qlhh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139B8826-9C80-4E1D-BD93-AA702234131C}|api_QLHH\\api_QLHH.csproj|solutionrelative:api_qlhh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Data\\ProductRepository.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\ProductRepository.cs",
+              "RelativeToolTip": "api_QLHH\\Data\\ProductRepository.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAgwMIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:37:09.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Services\\Interface\\IProductService.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\Interface\\IProductService.cs",
+              "RelativeToolTip": "api_QLHH\\Services\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAhwBcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:40:05.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Services\\ProductService.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\ProductService.cs",
+              "RelativeToolTip": "api_QLHH\\Services\\ProductService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAowGwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:37:33.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Controllers\\Controller.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Controllers\\Controller.cs",
+              "RelativeToolTip": "api_QLHH\\Controllers\\Controller.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAgwHcBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:41:09.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Services\\PersonService.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\PersonService.cs",
+              "RelativeToolTip": "api_QLHH\\Services\\PersonService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwGsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:37:34.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPersonService.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\Interface\\IPersonService.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Services\\Interface\\IPersonService.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Services\\Interface\\IPersonService.cs",
+              "RelativeToolTip": "api_QLHH\\Services\\Interface\\IPersonService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:12:22.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\Interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Data\\Interface\\IProductRepository.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\Interface\\IProductRepository.cs",
+              "RelativeToolTip": "api_QLHH\\Data\\Interface\\IProductRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIA8wBoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T09:13:22.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Data\\PersonRepository.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\PersonRepository.cs",
+              "RelativeToolTip": "api_QLHH\\Data\\PersonRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAASwCcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:37:09.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChiTietKho.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietKho.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\ChiTietKho.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietKho.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\ChiTietKho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T10:24:19.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChiTietKhoResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\ChiTietKhoResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\ChiTietKhoResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\ChiTietKhoResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\ChiTietKhoResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:39:21.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DanhMucSanPhamResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\DanhMucSanPhamResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\DanhMucSanPhamResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\DanhMucSanPhamResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\DanhMucSanPhamResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:39:21.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DashBoardResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\DashBoardResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\DashBoardResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\DashBoardResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\DashBoardResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:39:17.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Kho.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\Kho.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\Kho.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\Kho.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\Kho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T08:33:31.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NhapKhoRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\NhapKhoRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\NhapKhoRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\NhapKhoRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\NhapKhoRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:21:07.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreatePhieuNhapRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\CreatePhieuNhapRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\CreatePhieuNhapRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\CreatePhieuNhapRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\CreatePhieuNhapRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:16:50.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ListAccountResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\ListAccountResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\ListAccountResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\ListAccountResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\ListAccountResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:06:31.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KhoResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\KhoResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\KhoResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\KhoResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\KhoResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:19:47.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateChiTietPhieuNhapRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\CreateChiTietPhieuNhapRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\CreateChiTietPhieuNhapRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\CreateChiTietPhieuNhapRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\CreateChiTietPhieuNhapRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:17:08.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChiTietKhoRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\ChiTietKhoRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\ChiTietKhoRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\ChiTietKhoRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\ChiTietKhoRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:19:31.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SanPhamFollowingKhoResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\SanPhamFollowingKhoResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\SanPhamFollowingKhoResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\SanPhamFollowingKhoResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\SanPhamFollowingKhoResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T10:31:30.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\SanPham.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\SanPham.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\SanPham.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T10:24:43.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChiTietPhieuNhap.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietPhieuNhap.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\ChiTietPhieuNhap.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietPhieuNhap.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\ChiTietPhieuNhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:15:43.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChiTietPhieuXuat.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietPhieuXuat.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\ChiTietPhieuXuat.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\ChiTietPhieuXuat.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\ChiTietPhieuXuat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T07:55:01.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhieuNhap.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\PhieuNhap.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\PhieuNhap.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\PhieuNhap.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\PhieuNhap.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T08:02:37.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IPersonRepository.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\Interface\\IPersonRepository.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Data\\Interface\\IPersonRepository.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Data\\Interface\\IPersonRepository.cs",
+              "RelativeToolTip": "api_QLHH\\Data\\Interface\\IPersonRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:08:12.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PhieuNhapToPhieuNhapRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\PhieuNhapToPhieuNhapRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Mapping\\PhieuNhapToPhieuNhapRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\PhieuNhapToPhieuNhapRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Mapping\\PhieuNhapToPhieuNhapRequestDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T08:01:23.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AccountRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\AccountRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\AccountRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\AccountRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\AccountRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:07:40.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AccountMapping.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\AccountMapping.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Mapping\\AccountMapping.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\AccountMapping.cs",
+              "RelativeToolTip": "api_QLHH\\Mapping\\AccountMapping.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:15:04.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\SqlData\\Models\\Users.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\SqlData\\Models\\Users.cs",
+              "RelativeToolTip": "api_QLHH\\SqlData\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:37:48.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\AccountResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\AccountResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\AccountResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\AccountResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:36:11.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\appsettings.json",
+              "RelativeDocumentMoniker": "api_QLHH\\appsettings.json",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\appsettings.json",
+              "RelativeToolTip": "api_QLHH\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-02T07:20:55.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "KhoToKhoResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\KhoToKhoResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Mapping\\KhoToKhoResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\KhoToKhoResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Mapping\\KhoToKhoResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T09:13:20.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ChiTietKhoToChiTietKhoRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:55:00.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ChiTietKhoToChiTietKhoResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Mapping\\ChiTietKhoToChiTietKhoResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:57:41.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserRequestDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\UserRequestDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Requests\\UserRequestDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Requests\\UserRequestDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Requests\\UserRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:28:01.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Core\\DTOs\\Responses\\UserResponseDto.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Core\\DTOs\\Responses\\UserResponseDto.cs",
+              "RelativeToolTip": "api_QLHH\\Core\\DTOs\\Responses\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:09:58.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Program.cs",
+              "RelativeDocumentMoniker": "api_QLHH\\Program.cs",
+              "ToolTip": "D:\\BT\\QLDUCNTT\\QLHH\\ERP.BackEnd-review\\api_QLHH\\api_QLHH\\Program.cs",
+              "RelativeToolTip": "api_QLHH\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:14:29.876Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
