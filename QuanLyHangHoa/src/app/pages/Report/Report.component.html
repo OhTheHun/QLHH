@@ -1,0 +1,78 @@
+<div class="p-4">
+
+  <h2 class="pb-2">Báo cáo sản phẩm</h2>
+
+  <div class="filters d-flex align-items-center">
+
+    <dx-date-box
+      [(value)]="fromDate"
+      type="date"
+      displayFormat="dd/MM/yyyy"
+      class="me-3 w-180">
+    </dx-date-box>
+
+    <dx-date-box
+      [(value)]="toDate"
+      type="date"
+      displayFormat="dd/MM/yyyy"
+      class="me-3 w-180">
+    </dx-date-box>
+
+    <dx-button 
+      text="Xem báo cáo"
+      type="success"
+      icon="search"
+      (onClick)="loadData()">
+    </dx-button>
+
+  </div>
+
+  <br>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <dx-data-grid
+    [dataSource]="dataReport"
+    [showBorders]="true"
+    height="420">
+
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-paging [pageSize]="5"></dxo-paging>
+    <dxo-pager
+      [showPageSizeSelector]="true"
+      [showInfo]="true"
+      infoText="Trang {0}/{1} ({2} sản phẩm)">
+    </dxo-pager>
+
+    <dxi-column dataField="tenSanPham" caption="Tên sản phẩm" width="250"></dxi-column>
+    <dxi-column dataField="tongNhap" caption="Tổng nhập"></dxi-column>
+    <dxi-column dataField="tongXuat" caption="Tổng xuất"></dxi-column>
+    <dxi-column dataField="tonCuoi" caption="Tồn cuối"></dxi-column>
+    <dxi-column dataField="doanhThu" caption="Doanh thu" format="#,##0"></dxi-column>
+
+  </dx-data-grid>
+
+  <br>
+
+  <div class="row">
+    <div class="col-6">
+      <dx-chart
+        [dataSource]="chartData"
+        title="So sánh nhập / xuất">
+        <dxi-series valueField="Nhap" name="Nhập" argumentField="SanPham" type="bar"></dxi-series>
+        <dxi-series valueField="Xuat" name="Xuất" argumentField="SanPham" type="bar"></dxi-series>
+      </dx-chart>
+    </div>
+
+    <div class="col-6">
+      <dx-chart
+        [dataSource]="chartData"
+        title="Doanh thu theo sản phẩm">
+        <dxi-series valueField="DoanhThu" name="Doanh thu" argumentField="SanPham" type="line"></dxi-series>
+      </dx-chart>
+    </div>
+  </div>
+
+</div>

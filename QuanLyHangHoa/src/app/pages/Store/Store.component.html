@@ -1,0 +1,54 @@
+<div class="page-container">
+    <h2 class="title">Kho hàng</h2>
+
+    <div style="overflow-x:auto; max-width:100%;">
+        <dx-data-grid
+            [dataSource]="chiTietKhoList"
+            [keyExpr]="['khoId','sanPhamId']"
+            [showBorders]="true"
+            (onSelectionChanged)="onSelectionChanged($event)"
+            (onRowInserted)="onRowInserted($event)"
+            (onRowUpdated)="onRowUpdated($event)"
+            (onRowRemoved)="onRowRemoved($event)">
+            
+            <dxo-editing mode="row" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true"></dxo-editing>
+            <dxo-selection mode="multiple"></dxo-selection>
+            <dxo-column-chooser [enabled]="true" mode="select" title="Chọn cột hiển thị"></dxo-column-chooser>
+            <dxo-paging [pageSize]="5"></dxo-paging>
+            <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[5,10,20]" [showInfo]="true"
+                infoText="Trang {0}/{1} ({2} sản phẩm)"></dxo-pager>
+            <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+            <!-- Tên kho -->
+            <dxi-column dataField="khoId" caption="Tên kho"
+                [validationRules]="[{ type:'required', message:'Tên kho không được để trống'}]"
+                [lookup]="{ dataSource: khoList, valueExpr: 'khoId', displayExpr: 'tenKho' }"
+                [allowEditing]="false">
+            </dxi-column>
+
+            <!-- Địa chỉ kho -->
+            <dxi-column caption="Địa chỉ kho" [allowEditing]="false" [calculateCellValue]="getDiaChiFromRow">
+            </dxi-column>
+
+            <!-- Sản phẩm -->
+            <dxi-column dataField="sanPhamId" caption="Sản phẩm"
+                [validationRules]="[{ type:'required', message:'Sản phẩm không được để trống'}]"
+                [lookup]="{ dataSource: SanPhamList, valueExpr: 'sanPhamId', displayExpr: 'tenSanPham' }"
+                [allowEditing]="false">
+            </dxi-column>
+
+            <!-- Số lượng -->
+            <dxi-column dataField="soLuong" caption="Số lượng" dataType="number" [editorOptions]="{min:0}"
+                [validationRules]="[
+                    { type:'required', message:'Số lượng không được để trống' },
+                    { type:'range', min:0, message:'Số lượng ≥ 0' }
+                ]">
+            </dxi-column>
+
+            <!-- Template hình ảnh -->
+            <div *dxTemplate="let data of 'hinhAnhCellTemplate'">
+                <img *ngIf="data.data.hinhAnh" [src]="data.data.hinhAnh" [height]="80" alt="Hình ảnh kho" />
+            </div>
+        </dx-data-grid>
+    </div>
+</div>

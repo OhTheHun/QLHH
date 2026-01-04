@@ -1,0 +1,98 @@
+<h2>Thông tin người dùng</h2>
+
+<dx-validation-group>
+  <div class="profile-container">
+
+    <div class="dx-card profile-header">
+      <div class="profile-top">
+        <div class="avatar-wrapper">
+          <img class="avatar" [src]="employee.hinhAnh || 'https://via.placeholder.com/150'" />
+        </div>
+        <div class="description">{{ employee.note }}</div>
+      </div>
+    </div>
+
+    <div class="profile-action-buttons">
+      <dx-button text="{{ isEditing ? 'Lưu thông tin' : 'Chỉnh sửa' }}"
+                 [type]="isEditing ? 'success' : 'default'"
+                 icon="{{ isEditing ? 'save' : 'edit' }}"
+                 (onClick)="toggleEdit()">
+      </dx-button>
+    </div>
+
+    <div class="dx-card profile-form">
+
+      <!-- TÊN NHÂN VIÊN -->
+      <div class="form-row">
+        <label>Tên nhân viên</label>
+        <dx-text-box [value]="employee.tenUser"
+                     (onValueChanged)="employee.tenUser = $event.value"
+                     [readOnly]="!isEditing">
+        </dx-text-box>
+      </div>
+
+      <!-- ĐỊA CHỈ -->
+      <div class="form-row">
+        <label>Địa chỉ</label>
+        <dx-text-box [value]="employee.diaChi"
+                     (onValueChanged)="employee.diaChi = $event.value"
+                     [readOnly]="!isEditing">
+        </dx-text-box>
+      </div>
+
+      <!-- SĐT -->
+      <div class="form-row">
+        <label>Số điện thoại</label>
+        <dx-text-box [value]="employee.sdt"
+                     (onValueChanged)="employee.sdt = $event.value"
+                     [readOnly]="!isEditing">
+        </dx-text-box>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="form-row">
+        <label>Email</label>
+        <dx-text-box [value]="employee.email"
+                     (onValueChanged)="employee.email = $event.value"
+                     [readOnly]="true"> <!-- không cho chỉnh email -->
+        </dx-text-box>
+      </div>
+
+      <!-- ROLE -->
+      <div class="form-row">
+        <label>Role</label>
+        <dx-text-box [value]="employee.role"
+                     (onValueChanged)="employee.role = $event.value"
+                     [readOnly]="true"> <!-- không cho chỉnh role -->
+        </dx-text-box>
+      </div>
+
+      <!-- GHI CHÚ -->
+      <div class="form-row" style="grid-column: span 2;">
+        <label>Ghi chú</label>
+        <dx-text-box [value]="employee.note"
+                     (onValueChanged)="employee.note = $event.value"
+                     [readOnly]="!isEditing">
+        </dx-text-box>
+      </div>
+
+      <!-- HÌNH ẢNH -->
+      <div class="form-row" style="grid-column: span 2;">
+        <label>Hình ảnh</label>
+        <dx-text-box placeholder="Nhập URL ảnh..."
+                     [(value)]="imageUrlInput"
+                     (onValueChanged)="onImageUrlChanged($event)"
+                     [readOnly]="!isEditing">
+          <dx-validator>
+            <dxi-validation-rule type="pattern"
+                                 [pattern]="imageUrlPattern"
+                                 message="URL ảnh không hợp lệ! Chỉ chấp nhận .jpg, .jpeg, .png">
+            </dxi-validation-rule>
+          </dx-validator>
+        </dx-text-box>
+      </div>
+
+    </div>
+
+  </div>
+</dx-validation-group>

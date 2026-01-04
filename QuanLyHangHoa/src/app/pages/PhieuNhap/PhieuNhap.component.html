@@ -1,0 +1,139 @@
+<div class="page-container">
+  <h2 class="title">Phiếu nhập kho</h2>
+
+  <!-- ===== HEADER ===== -->
+  <div class="dx-card form-section">
+    <div class="row single-col">
+      <div class="col">
+        <label>Nhà cung cấp <span class="required">*</span></label>
+        <dx-select-box
+          [dataSource]="nhaCungCapDs"
+          displayExpr="tenNhaCungCap"
+          valueExpr="nhaCungCapId"
+          [(value)]="nhaCungCapId"
+          placeholder="Chọn nhà cung cấp">
+        </dx-select-box>
+      </div>
+      <div class="col">
+        <label>Kho <span class="required">*</span></label>
+        <dx-select-box
+          [dataSource]="khoDs"
+          displayExpr="tenKho"
+          valueExpr="khoId"
+          [(value)]="khoId"
+          (onValueChanged)="onKhoChanged($event)"
+          placeholder="Chọn kho">
+        </dx-select-box>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GRID ===== -->
+  <div class="dx-card grid-section">
+    <dx-data-grid
+      [dataSource]="chiTietPhieuNhap"
+      keyExpr="SanPhamId"
+      [showBorders]="true"
+      (onExporting)="onExporting($event)"
+      (onRowInserted)="recalcTotal()"
+      (onRowUpdated)="recalcTotal()"
+      (onRowRemoved)="recalcTotal()">
+      <dxo-export [enabled]="true"></dxo-export>
+      <dxo-paging [pageSize]="5"></dxo-paging>
+
+      <dxo-editing
+        mode="row"
+        [allowAdding]="true"
+        [allowUpdating]="true"
+        [allowDeleting]="true">
+      </dxo-editing>
+
+      <!-- SẢN PHẨM -->
+      <dxi-column
+        dataField="SanPhamId"
+        caption="Sản phẩm"
+        [lookup]="{
+          dataSource: sanPhamByKhoDs,
+          displayExpr: 'tenSanPham',
+          valueExpr: 'sanPhamId',
+          value: 'SanPhamId'
+        }">
+        <dxi-validation-rule
+          type="required"
+          message="Chọn sản phẩm">
+        </dxi-validation-rule>
+      </dxi-column>
+
+      <!-- SỐ LƯỢNG -->
+      <dxi-column
+        dataField="SoLuong"
+        caption="Số lượng"
+        dataType="number"
+        [editorOptions]="{ min: 1 }">
+        <dxi-validation-rule
+          type="required"
+          message="Nhập số lượng">
+        </dxi-validation-rule>
+        <dxi-validation-rule
+          type="range"
+          [min]="1"
+          message="Số lượng ≥ 1">
+        </dxi-validation-rule>
+      </dxi-column>
+
+      <!-- ĐƠN GIÁ -->
+      <dxi-column
+        dataField="DonGia"
+        caption="Đơn giá nhập"
+        dataType="number"
+        format="#,##0">
+      </dxi-column>
+
+      <!-- NGÀY NHẬP -->
+      <dxi-column
+        dataField="NgayNhap"
+        caption="Ngày nhập"
+        dataType="datetime"
+        [editorOptions]="{ min: today }"
+        displayFormat="dd/MM/yyyy HH:mm">
+        <dxi-validation-rule
+          type="required"
+          message="Chọn ngày nhập">
+        </dxi-validation-rule>
+      </dxi-column>
+
+      <!-- THÀNH TIỀN -->
+      <dxi-column
+        caption="Thành tiền"
+        [calculateCellValue]="calcThanhTien"
+        dataType="number"
+        format="#,##0"
+        [allowEditing]="false">
+      </dxi-column>
+
+    </dx-data-grid>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer-bar">
+    <div class="total">
+      Tổng tiền:
+      <b>{{ tongTien | number:'1.0-0' }}</b>
+    </div>
+
+    <div class="actions">
+      <dx-button
+        text="Lưu phiếu nhập"
+        type="success"
+        (onClick)="savePhieuNhap()">
+      </dx-button>
+
+      <dx-button
+        text="Xem DS phiếu nhập"
+        type="default"
+        stylingMode="outlined"
+        (onClick)="showDanhSach()">
+      </dx-button>
+    </div>
+  </div>
+</div>

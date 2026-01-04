@@ -1,0 +1,111 @@
+<div class="history-container">
+    <!-- TITLE -->
+    <h3 class="title">Lịch sử nhập xuất</h3>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+
+    <dx-text-box
+        placeholder="Mã phiếu"
+        [(value)]="filter.code">
+    </dx-text-box>
+
+    <!-- SẢN PHẨM -->
+    <dx-select-box
+      placeholder="Sản phẩm"
+      [dataSource]="SanPhamList"
+      displayExpr="tenSanPham"
+      valueExpr="sanPhamId"
+      [(value)]="filter.sanPhamId">
+    </dx-select-box>
+
+    <!-- TỪ NGÀY -->
+    <dx-date-box
+      type="date"
+      placeholder="Từ ngày"
+      displayFormat="dd/MM/yyyy"
+      [(value)]="filter.fromDate">
+    </dx-date-box>
+
+    <!-- ĐẾN NGÀY -->
+    <dx-date-box
+      type="date"
+      placeholder="Đến ngày"
+      displayFormat="dd/MM/yyyy"
+      [(value)]="filter.toDate">
+    </dx-date-box>
+
+    <dx-button
+      text="Tìm kiếm"
+      type="default"
+      (onClick)="search()">
+    </dx-button>
+</div>
+
+  <!-- GRID -->
+  <dx-data-grid
+  [dataSource]="filteredDs"
+  [showBorders]="true"
+  [rowAlternationEnabled]="true"
+  (onExporting)="exportExcel($event)">
+
+  <dxo-paging [pageSize]="5"></dxo-paging>
+  <dxo-pager
+    [showPageSizeSelector]="true"
+    [allowedPageSizes]="[5,10,20]"
+    [showInfo]="true"
+    infoText="Trang {0}/{1} ({2} dòng)">
+  </dxo-pager>
+
+  <dxo-export [enabled]="true"></dxo-export>
+
+  <!-- CODE -->
+  <dxi-column
+    dataField="code"
+    caption="Mã phiếu">
+  </dxi-column>
+
+  <!-- LOẠI -->
+  <dxi-column
+    dataField="loai"
+    caption="Loại">
+  </dxi-column>
+
+  <!-- TÊN SP -->
+  <dxi-column
+    dataField="tenSanPham"
+    caption="Tên sản phẩm">
+  </dxi-column>
+
+  <!-- SỐ LƯỢNG -->
+  <dxi-column
+    dataField="soLuong"
+    caption="Số lượng"
+    dataType="number">
+  </dxi-column>
+
+  <!-- ĐƠN GIÁ -->
+  <dxi-column
+    dataField="donGia"
+    caption="Đơn giá"
+    dataType="number"
+    format="#,##0">
+  </dxi-column>
+
+  <!-- THÀNH TIỀN -->
+  <dxi-column
+    caption="Thành tiền"
+    dataType="number"
+    format="#,##0"
+    [calculateCellValue]="calcThanhTien">
+  </dxi-column>
+
+  <!-- NGÀY -->
+  <dxi-column
+    dataField="ngayGiao"
+    caption="Ngày giao"
+    dataType="date"
+    format="dd/MM/yyyy">
+  </dxi-column>
+</dx-data-grid>
+</div>

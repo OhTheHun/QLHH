@@ -1,0 +1,74 @@
+<div class="page-container">
+
+    <h2 class="title">Danh mục hàng hóa</h2>
+
+    <div class="btn-bar">
+        <dx-button text="Thêm danh mục" type="success" ></dx-button>
+        <dx-button text="Xóa các mục đã chọn" type="danger" (onClick)="deleteSelected()"></dx-button>
+
+    </div>
+
+    <dx-data-grid [dataSource]="SanPhamList" keyExpr="sanPhamId" [showBorders]="true"
+        (onSelectionChanged)="onSelectionChanged($event)">
+
+        <dxo-selection mode="multiple"></dxo-selection>
+        <dxo-column-chooser [enabled]="true" mode="select"></dxo-column-chooser>
+
+        <dxo-editing mode="row" [allowAdding]="true" [allowUpdating]="true" [allowDeleting]="true">
+        </dxo-editing>
+
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxo-paging [pageSize]="5"></dxo-paging>
+        <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[5,10,20]" [showInfo]="true"
+                infoText="Trang {0}/{1} ({2} sản phẩm)"></dxo-pager>
+
+        <!-- Hình ảnh -->
+        <dxi-column dataField="hinhAnh" caption="Hình ảnh" width="140" cellTemplate="hinhAnhTpl">
+        </dxi-column>
+
+        <!-- Tên -->
+        <dxi-column dataField="tenSanPham" caption="Tên sản phẩm" [validationRules]="[
+              { type:'required', message:'Tên sản phẩm không được để trống' }
+            ]">
+        </dxi-column>
+
+        <!-- Danh mục -->
+        <dxi-column dataField="danhMucId" caption="Danh mục" [lookup]="{
+              dataSource: danhMucList,
+              valueExpr: 'danhMucId',
+              displayExpr: 'tenDanhMuc'
+            }" [validationRules]="[
+              { type:'required', message:'Danh mục không được để trống' }
+            ]">
+        </dxi-column>
+
+        <!-- Giá -->
+        <dxi-column dataField="donGia" caption="Đơn giá" dataType="number" format="#,##0" [editorOptions]="{ min: 0 }"
+            [validationRules]="[
+              { type:'required', message:'Giá không được để trống' },
+              { type:'range', min:0, message:'Giá phải ≥ 0' }
+            ]">
+        </dxi-column>
+
+        <!-- Trạng thái -->
+        <dxi-column dataField="trangThai" caption="Trạng thái" [lookup]="{
+              dataSource: trangThaiOptions,
+              valueExpr: 'value',
+              displayExpr: 'text'
+            }" cellTemplate="statusCellTemplate"
+            [validationRules]="[{ type: 'required', message: 'Trạng thái không được để trống' }]">
+        </dxi-column>
+
+        <!-- Templates -->
+        <div *dxTemplate="let data of 'hinhAnhTpl'">
+            <img *ngIf="data.data.HinhAnh" [src]="data.data.HinhAnh" height="70" />
+        </div>
+
+        <div *dxTemplate="let data of 'statusCellTemplate'">
+            <span [ngClass]="data.data.trangThai ? 'status-active' : 'status-inactive'">
+                {{ data.data.trangThai ? 'Hoạt động' : 'Ngừng bán' }}
+            </span>
+        </div>
+
+    </dx-data-grid>
+</div>

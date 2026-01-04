@@ -1,0 +1,14 @@
+.report-container {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .dx-selectbox, .dx-button {
+    min-width: 160px;
+  }
+}

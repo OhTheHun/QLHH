@@ -1,0 +1,47 @@
+<div class="dashboard p-4">
+
+  <h2 class="mb-3">Trang chủ</h2>
+
+  <!-- ==== SUMMARY CARDS ==== -->
+  <div class="row mb-4">
+
+    <div class="col-3" *ngFor="let card of summaryCards">
+      <div class="card summary-card">
+        <div class="card-body">
+          <div class="summary-title">{{ card.title }}</div>
+          <div class="summary-value">{{ card.value | number }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-mb-4">
+    <div class="card-body">
+      <dx-chart
+        [dataSource]="chartTopProducts"
+        title="Top 5 bán chạy">
+        <dxi-series valueField="SoLuong" name="Số lượng" argumentField="SanPham" type="bar"></dxi-series>
+      </dx-chart>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">Sản phẩm sắp hết hàng</div>
+        <div class="card-body">
+          <dx-data-grid
+            [dataSource]="lowStockProducts"
+            [showBorders]="true">
+            <dxi-column dataField="SanPham" caption="Sản phẩm"></dxi-column>
+            <dxi-column dataField="TonKho" caption="Tồn" dataType="number"></dxi-column>
+          </dx-data-grid>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

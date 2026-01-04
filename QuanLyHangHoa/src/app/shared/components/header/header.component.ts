@@ -1,0 +1,75 @@
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { DxButtonModule } from 'devextreme-angular/ui/button';
+import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
+
+import { AuthService, IUser } from '../../services';
+import { UserPanelComponent } from '../user-panel/user-panel.component';
+import { ThemeSwitcherComponent } from '../theme-switcher/theme-switcher.component';
+import { Subscription } from 'rxjs';
+
+
+@Component({
+  selector: 'app-header',
+  templateUrl: 'header.component.html',
+  styleUrls: ['./header.component.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    DxButtonModule,
+    UserPanelComponent,
+    DxToolbarModule,
+    ThemeSwitcherComponent,
+  ]
+})
+
+export class HeaderComponent implements OnInit {
+  @Output()
+  menuToggle = new EventEmitter<boolean>();
+
+  @Input()
+  menuToggleEnabled = false;
+
+  @Input()
+  title!: string;
+
+  user: IUser | null = null;
+
+  userMenuItems = [{
+    text: 'Profile',
+    icon: 'user',
+    onClick: () => {
+      this.router.navigate(['/profile']);
+    }
+  },
+  {
+    text: 'Logout',
+    icon: 'runner',
+    onClick: () => {
+      this.authService.logOut();
+      this.router.navigate(['/login-form']);
+    }
+  }];
+  private sub!: Subscription;
+
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) {}
+
+  /* ===== LẤY USER TỪ AUTH SERVICE ===== */
+  ngOnInit() {
+    this.sub = this.authService.user$.subscribe(user => {
+      this.user = user;
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
+  }
+
+  toggleMenu = () => {
+    this.menuToggle.emit();
+  };
+}

@@ -1,0 +1,106 @@
+<div class="account-page">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h3>Quản lý tài khoản</h3>
+  </div>
+
+  <div class="action-button">
+    <dx-button
+      text="Thêm tài khoản"
+      icon="plus"
+      type="default"
+      [elementAttr]="{ class: 'btn-add-acc' }">
+    </dx-button>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid-wrapper">
+    <dx-data-grid
+      [dataSource]="users"
+      keyExpr="userId"
+      [showBorders]="true"
+      [columnAutoWidth]="true"
+      [selection]="{ mode: 'multiple' }"
+      (onRowInserted)="onRowInserted($event)"
+      >
+
+      <!-- FILTER / PAGING -->
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxo-paging [pageSize]="5"></dxo-paging>
+      <dxo-pager
+        [showPageSizeSelector]="true"
+        [allowedPageSizes]="[5,10,20]"
+        [showInfo]="true">
+      </dxo-pager>
+
+      <!-- EDITING -->
+      <dxo-editing
+        mode="row"
+        [allowAdding]="true"
+        [allowUpdating]="true"
+        [allowDeleting]="true"
+        [useIcons]="true">
+      </dxo-editing>
+
+      <!-- COLUMNS -->
+      <dxi-column
+        dataField="tenUser"
+        caption="Tên người dùng"
+        [validationRules]="[{ type: 'required', message: 'Tên người dùng không được để trống' }]">
+      </dxi-column>
+
+      <dxi-column
+        dataField="email"
+        caption="Email"
+        [validationRules]="[
+          { type: 'required', message: 'Email không được để trống' },
+          { type: 'email', message: 'Email không hợp lệ' }
+        ]">
+      </dxi-column>
+
+      <dxi-column
+        dataField="sdt"
+        caption="Số điện thoại"
+        [validationRules]="[
+          { type: 'required', message: 'Số điện thoại không được để trống' },
+          { type: 'pattern', pattern: '^\\d{10,12}$', message: 'Số điện thoại phải từ 10-12 chữ số' }
+        ]">
+      </dxi-column>
+      <dxi-column
+        dataField="diaChi"
+        caption="Địa chỉ"
+        [validationRules]="[
+          { type: 'required', message: 'Địa chỉ không được để trống' },
+        ]">
+      </dxi-column>
+
+      <!-- VAI TRÒ -->
+      <dxi-column
+        dataField="role"
+        caption="Loại người dùng"
+        cellTemplate="vaiTroCellTemplate"
+        [validationRules]="[{ type: 'required', message: 'Vai trò không được để trống' }]">
+        <dxo-lookup
+          [dataSource]="vaiTro"
+          valueExpr="value"
+          displayExpr="value">
+        </dxo-lookup>
+        
+      </dxi-column>
+
+      <!-- TEMPLATE: VAI TRÒ -->
+      <div *dxTemplate="let data of 'vaiTroCellTemplate'">
+        <span
+          [ngClass]="
+            data.data?.role === 'ADMIN' ? 'status-admin' :
+            data.data?.role === 'NHANVIEN' ? 'status-nhanvien' : ''
+          ">
+          {{ data.data?.role }}
+        </span>
+      </div>
+
+    </dx-data-grid>
+  </div>
+
+</div>

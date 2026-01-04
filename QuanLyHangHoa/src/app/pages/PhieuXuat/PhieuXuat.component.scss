@@ -1,0 +1,82 @@
+/* ===== LAYOUT CHUNG ===== */
+.page-container {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===== FORM ===== */
+.form-section {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Row chuẩn */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Row 1 cột -> KHÔNG ép width */
+.row.single-col {
+  width: 100%;
+}
+
+/* Column */
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.required {
+  color: red;
+}
+
+/* DevExtreme full width */
+dx-select-box {
+  width: 100%;
+}
+
+/* ===== GRID ===== */
+.grid-section {
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* ===== FOOTER ===== */
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.total {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
